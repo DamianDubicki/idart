@@ -1,0 +1,7 @@
+# Ignore virtual environment
+idart/
+# Ignore cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

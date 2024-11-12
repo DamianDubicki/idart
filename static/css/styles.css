@@ -1,0 +1,105 @@
+/*
+    Application Name: IDArt 
+    Course: INFO39014 Capstone Project 
+    Date: November 25, 2024
+    Group: 19
+    Authors: Damian Dubicki, Dylan Law, Suresh Sharma, Volodymyr Suprun
+*/
+
+/*Main*/
+body {
+    background-color: #ffffff;
+    color: #141414;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.titleContainer {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/*Buttons*/
+.button {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: #949393;
+}
+
+/*Cropping*/
+.imageButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    touch-action: pan-x pan-y;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 350px;
+    margin-bottom: 10px;
+}
+
+/*Prediction*/
+.loading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.predictionText {
+    font-size: 20px;
+    text-align: center;
+}
+
+.instructionText {
+    font-size: 18px;
+    text-align: center;
+    color: #141414;
+}
+
+/*Night Mode*/
+body.night-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.night-mode .button {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+.night-mode .button:hover {
+    background-color: #949393;
+}
+
+.night-mode .instructionText {
+    color: #ffffff;
+}

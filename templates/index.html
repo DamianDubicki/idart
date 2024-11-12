@@ -1,0 +1,50 @@
+<!--
+    Application Name: IDArt 
+    Course: INFO39014 Capstone Project 
+    Date: November 25, 2024
+    Group: 19
+    Authors: Damian Dubicki, Dylan Law, Suresh Sharma, Volodymyr Suprun
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDArt</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="titleContainer">
+            <h1 class="title">IDArt</h1>
+        </div>
+        
+        <button class="button" id="uploadButton">Upload</button>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
+        <div id="cropContainer" style="display: none;">
+            <div class="imageButtonContainer">
+                <img id="cropImage" class="image">
+                <p id="instructionText" class="instructionText">Crop out any frame or background</p>
+                <button class="button" id="cropButton">Get Results</button>
+            </div>
+        </div>
+
+        <img id="selectedImage" class="image">
+        <div id="loading" class="loading" style="display: none;">Loading...</div>
+        <div id="prediction" class="prediction">
+            <p class="predictionText" id="artwork"></p>
+            <p class="predictionText" id="artist"></p>
+            <p class="predictionText" id="date"></p>
+            <p class="predictionText" id="style"></p>
+            <p class="predictionText" id="confidence"></p>
+        </div>
+        <button class="button toggle-button" id="toggleThemeButton">Day/Night</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="/static/js/javascript.js"></script>
+</body>
+</html>
